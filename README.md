@@ -4,7 +4,7 @@
 
 <details><summary>Block 1: Introduction to Algorithms</summary>
   
-<details><summary>Task A</summary>
+<details><summary>Task A: Amateur agronomist</summary>
   
 #### Description:
   
@@ -30,7 +30,7 @@ If there are several longest segments, print the segment that starts earlier.
 
 </details>
 
-<details><summary>Task B</summary>
+<details><summary>Task B: Gleb's Zoo</summary>
   
 #### Description:
 
@@ -48,7 +48,7 @@ It is required to print "Impossible" if there is no solution, or "Possible" if i
 
 </details>
 
-<details><summary>Task C</summary>
+<details><summary>Task C: Configuration file</summary>
   
 #### Description:
 
@@ -79,7 +79,7 @@ For each line of type 'variable1'='variable2' print the value that was assigned.
 
 </details>
 
-<details><summary>Task D</summary>
+<details><summary>Task D: Professor Chaos</summary>
   
 #### Description:
 
@@ -106,7 +106,7 @@ Print a single number — the number of bacteria Chaos has by the end of the k-t
 
 <details><summary>Block 2: Data structures</summary>
   
-<details><summary>Task E</summary>
+<details><summary>Task E: Cows in a stall</summary>
   
 #### Description:
   
@@ -122,7 +122,7 @@ Print a single number, the largest possible allowed distance.
 
 </details>
 
-<details><summary>Task F</summary>
+<details><summary>Task F: Number</summary>
 
 #### Description:  
 
@@ -140,7 +140,7 @@ Output one line to the output file — the maximum number that could be written 
   
 </details>
 
-<details><summary>Task G</summary>
+<details><summary>Task G: Nightmare in the castle</summary>
   
 #### Description:
   
@@ -158,7 +158,7 @@ Output the string s, in which the letters are rearranged so that the resulting w
 
 </details>
 
-<details><summary>Task H</summary>
+<details><summary>Task H: Shop</summary>
   
 ### Description:
 
@@ -187,7 +187,7 @@ Minimum amount.
 
 <details><summary>Block 3: Sorting</summary>
   
-<details><summary>Task I</summary>
+<details><summary>Task I: Cars</summary>
   
 #### Description:
   
@@ -203,7 +203,7 @@ Print a single number: the minimum number of operations Petya's mother needs to 
       
 </details>
 
-<details><summary>Task J</summary>
+<details><summary>Task J: Goblins and queues</summary>
 
 #### Description:
   
@@ -227,7 +227,7 @@ For each query like - the program should display the number of the goblin who sh
  
 </details>
 
-<details><summary>Task K</summary>
+<details><summary>Task K: Memory manager-1</summary>
   
 #### Description:
   
@@ -243,7 +243,7 @@ For each memory allocation request, output the result of processing this request
   
 </details>
 
-<details><summary>Task L</summary>
+<details><summary>Task L: Minimum on the segment</summary>
   
 ### Description:
   
@@ -260,3 +260,85 @@ The output should contain N - K + 1 lines - the minimum for each position of the
 </details>
 </details>
 
+<details><summary>Block 4: Graph</summary>
+  
+<details><summary>Task M: Civilization</summary>
+  
+#### Description:
+  
+The world map in the computer game "Civilization" version 1 is a rectangle divided into squares. Each square can have one of several possible reliefs, for simplicity we will limit ourselves to three types of reliefs - field, forest and water. The settler moves around the map, while moving to a cell occupied by a field takes one unit of time, moving to a forest takes two units of time, and moving to a cell with water is impossible.
+
+You have one settler, you have determined the place where you need to build a city in order to take over the whole world as soon as possible. Find the route of the settler, which leads him to the place of construction of the city, requiring a minimum of time. On each move, a migrant can move to a cell that has a common side with the cell where he is currently located.
+  
+#### Input:
+  
+The input file contains two natural numbers N and M, not exceeding 1000 — the dimensions of the world map (N is the number of rows in the map, M is the number of columns). Then the coordinates of the initial position of the settler x and y are given, where x is the row number, y is the column number on the map (1 ≤ x ≤ N, 1 ≤ y ≤ M), rows are numbered from top to bottom, columns are numbered from left to right. Then, the coordinates of the cell where you want to bring the settler are set in the same way.
+
+Next comes the description of the world map in the form of N lines, each of which contains M characters. Each character can be either "." (dot) to represent a field, or "W" to represent forest, or "#" to represent water. It is guaranteed that the start and end cells of the migrant's path are not water.
+  
+#### Output:
+  
+In the first line of the output file print the number of time units needed to move the settler (moving to a cell with a field takes 1 time unit, moving to a cell with a forest takes 2 time units). In the second line of the output file print a sequence of characters that define the migrant's route. Each character must be one of the following four: "N" (move up), "E" (move right), "S" (move down), "W" (move left). If there are several such routes, print any of them.
+
+If it is impossible to get from the initial cell to the final one, print the number -1.
+      
+</details>
+
+<details><summary>Task N: Piggy banks</summary>
+
+#### Description:
+  
+Vasya has n piggy banks, the pigs are numbered from 1 to n. Each piggy bank can be opened with a single matching key or broken.
+
+Vasya put the keys in some of the piggy banks (he remembers which key is in which of the piggy banks). Now Vasya is going to buy a car, and for this he needs to get money from all piggy banks. At the same time, he wants to break as few piggy banks as possible (after all, he still needs to save money for an apartment, a summer house, a helicopter ...). Help Vasya determine the minimum number of piggy banks to break.
+
+#### Input:
+
+The first line contains the number n — the number of piggy banks (1 ≤ n ≤ 100). Then there are n lines describing where the key to which piggy bank is located: the i-th of these lines contains the number of the piggy bank containing the key to the i-th piggy bank.
+  
+#### Output:
+  
+Print a single number: the minimum number of piggy banks you need to split.
+ 
+</details>
+
+<details><summary>Task O: Down with cheating!</summary>
+  
+#### Description:
+  
+During the test, Mikhail Dmitrievich noticed that some lkshats were exchanging notes. At first, he wanted to give them all twos, but that day Mikhail Dmitrievich was kind, and therefore he decided to divide the lkshat into two groups: those who cheat and those who give to write off, and give two only to the first.
+
+Mikhail Dmitrievich has recorded all the pairs of lkshats who exchanged notes. It is required to determine whether he can divide the lkshat into two groups so that any exchange of notes is carried out from the lkshon of one group to the lkshon of the other group.
+
+#### Input:
+  
+The first line contains two numbers N and M — the number of lkshats and the number of pairs of lkshats exchanging notes (1 <= N <= 100, 0 <= M <= N(N-1)/2). Further in M lines there are descriptions of pairs of lkshats: two different numbers corresponding to the numbers of lkshats exchanging notes (numbering of lkshats starts from 1). Each pair of lkshats is listed at most once.
+  
+#### Output:
+
+It is necessary to derive the answer to Pavel Olegovich's problem. If it is possible to divide lkshat into two groups, print "YES"; otherwise print "NO".
+  
+</details>
+
+<details><summary>Task P: Flights</summary>
+  
+### Description:
+  
+Chief designer Petya was asked to develop a new aircraft model for Air Bubundia. It turned out that the most difficult part lies in the selection of the optimal size of the fuel tank.
+
+The chief cartographer of Air Bubundia, Vasya, made a detailed map of Bubundia. On this map, he noted the fuel consumption for a flight between each pair of cities.
+
+Petya wants to make the tank size as small as possible, for which the plane can fly from any city to any other (perhaps with refueling on the way).
+
+#### Input:
+  
+The first line of the input file contains a natural number n (0 <= N <= 1000) — the number of cities in Bubundia. Then there are n lines of n numbers each. The j-th number in the i-th line is equal to the fuel consumption for the flight from the i-th city to the j-th one. All numbers are not less than zero and less than 10^9. It is guaranteed that for any i in the i-th row, the i-th number is equal to zero.
+
+#### Output:
+  
+The first line of the output file must contain a single number — the optimal tank size.
+
+</details>
+</details>
+  
+  
